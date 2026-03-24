@@ -3,78 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Data Scientist</title>
+    <title>Soham | Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <h2 class="logo">MyPortfolio</h2>
-            <ul>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">SOHAM.DS</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Soham</h1>
+            <p class="hero-subtitle">Data Scientist | Machine Learning Engineer</p>
+            <p class="hero-tagline">"Turning Data into Insights and Intelligent Solutions"</p>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hi, I'm <span>Soham</span></h1>
-        <p>Aspiring Data Scientist | ML Enthusiast</p>
-        <button onclick="scrollToSection('projects')">View Projects</button>
-    </section>
+    <main>
+        <section id="about" class="container">
+            <div class="about-card">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a passionate Data Scientist dedicated to solving complex real-world problems through data-driven storytelling and robust Machine Learning models. With a strong foundation in Deep Learning and statistical analysis, I bridge the gap between raw data and actionable intelligence.</p>
+            </div>
+        </section>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Data Science enthusiast with knowledge in Machine Learning, Deep Learning, 
-            and Data Analysis. I love solving real-world problems using data.
-        </p>
-    </section>
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <div class="badge-container">
+                            <span class="badge">Python</span>
+                            <span class="badge">SQL</span>
+                            <span class="badge">R</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> ML / DL</h3>
+                        <div class="badge-container">
+                            <span class="badge">Scikit-learn</span>
+                            <span class="badge">TensorFlow</span>
+                            <span class="badge">PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <div class="badge-container">
+                            <span class="badge">Pandas</span>
+                            <span class="badge">Power BI</span>
+                            <span class="badge">NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div>Python</div>
-            <div>Machine Learning</div>
-            <div>Deep Learning</div>
-            <div>SQL</div>
-            <div>Power BI</div>
-            <div>Statistics</div>
-        </div>
-    </section>
+        <section id="projects" class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Classification model to predict user attrition using Random Forest and SMOTE.</p>
+                        <div class="tech-stack">Python • Scikit-learn</div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-outline">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Customer Segmentation</h3>
+                        <p>K-Means clustering to segment retail customers based on purchasing behavior.</p>
+                        <div class="tech-stack">Python • Pandas • K-Means</div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Pneumonia Detection (CNN)</h3>
+                        <p>CNN model to detect pneumonia from X-ray images with high precision.</p>
+                        <div class="tech-stack">TensorFlow • Keras</div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>House Price Predictor</h3>
+                        <p>End-to-end regression project deployed via Streamlit on AWS.</p>
+                        <div class="tech-stack">Flask • Streamlit • AWS</div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-outline">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>Customer Churn Prediction</h3>
-            <p>Built ML models to predict customer churn using classification techniques.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Customer Segmentation</h3>
-            <p>Used K-Means clustering to segment customers based on behavior.</p>
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: yourmail@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    </section>
+        <section id="contact" class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>soham.datascience@email.com</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/soham-ds</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2026 Soham | Data Science Portfolio</p>
+        <p>&copy; 2026 Soham. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
